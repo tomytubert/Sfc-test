@@ -1,22 +1,22 @@
 import styled from "styled-components";
-import variables from "../Styles/_variables"
+import variables from "../../Styles/_variables";
 
 export const CenterContainer = styled.section`
+  color: ${variables.colors.black}
+  left: 50%;
   position: absolute;
   top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
-  color: ${variables.colors.black}
 `;
 
 export const ButtonsContainer = styled.div`
+  align-items: center;
   display: flex;
   justify-content: space-evenly;
-  align-items:center;
 `;
 
 export const Title = styled.h1`
-  font-family: "Roboto", sans-serif;
+  font-family: ${variables.font.title};
   font-size: 3.5rem;
   text-align: center;
   span {
