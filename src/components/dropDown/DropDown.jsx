@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { List, Container } from "./styles";
+import * as S from "./styles";
 import DropDownArrow from "../Icons/DropDownArrow/DropDownArrow";
 
 const DropDown = ({ links, text }) => {
@@ -13,12 +13,12 @@ const DropDown = ({ links, text }) => {
 
   return (
     <>
-      <Container>
+      <S.Container>
         <div onClick={() => handleOpenList()}>
           <p>{text}</p>
           <DropDownArrow clicked={isListOpen.toString()} />
         </div>
-        <List>
+        <S.List>
           {isListOpen && (
             <div onClick={() => handleOpenList()}>
               {isListOpen && (
@@ -34,8 +34,8 @@ const DropDown = ({ links, text }) => {
               )}
             </div>
           )}
-        </List>
-      </Container>
+        </S.List>
+      </S.Container>
     </>
   );
 };

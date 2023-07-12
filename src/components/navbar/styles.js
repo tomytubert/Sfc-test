@@ -3,11 +3,11 @@ import variables from "../../Styles/_variables";
 
 export const Nav = styled.nav`
   background: transparent;
-  position: sticky;
+  position: absolute;
   top: 0;
   width: 100%;
   z-index: 5;
-  >div:nth-child(1) {
+  > div:nth-child(1) {
     display: flex;
     justify-content: space-between;
     padding: 20px 60px;
@@ -25,12 +25,13 @@ export const Nav = styled.nav`
 `;
 
 export const Links = styled.ul`
+  align-items: center;
   display: flex;
   font-family: ${variables.font.title};
   justify-content: space-between;
   list-style: none;
   a {
-    color: ${variables.colors.black};
+    color: black;
     font-size: 1.5rem;
     font-weight: 500;
     text-decoration: none;
@@ -43,5 +44,9 @@ export const Links = styled.ul`
     align-items: center;
     display: flex;
     gap: 8px;
+  }
+  #lenguage {
+    border: 1px solid black;
+    padding: 10px;
   }
 `;

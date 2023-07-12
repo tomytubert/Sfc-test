@@ -10,7 +10,7 @@ export const Arrow = styled.div`
   width: 14px;
   &:before,
   &:after {
-    background: ${variables.colors.black};
+    background: black;
     border-radius: 3px;
     content: " ";
     height: 2px;

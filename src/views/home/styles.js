@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import variables from "../Styles/_variables"
+import variables from "../../Styles/_variables";
 
 export const CenterContainer = styled.section`
   color: ${variables.colors.black}
@@ -10,13 +10,13 @@ export const CenterContainer = styled.section`
 `;
 
 export const ButtonsContainer = styled.div`
-  align-items:center;
+  align-items: center;
   display: flex;
   justify-content: space-evenly;
 `;
 
 export const Title = styled.h1`
-  font-family: "Roboto", sans-serif;
+  font-family: ${variables.font.title};
   font-size: 3.5rem;
   text-align: center;
   span {

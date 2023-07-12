@@ -1,5 +1,4 @@
 import styled, { keyframes } from "styled-components";
-import variables from "../../Styles/_variables";
 
 const modalContentIn = keyframes`
   0% {
@@ -13,6 +12,7 @@ const modalContentIn = keyframes`
   `;
 
 export const Container = styled.div`
+  cursor: pointer;
   position: relative;
   width: 100%;
   > div:nth-child(1) {
@@ -20,7 +20,7 @@ export const Container = styled.div`
     display: flex;
     gap: 8px;
     p {
-      color: ${variables.colors.black};
+      color: black;
       font-size: 1.5rem;
       font-weight: 500;
       text-decoration: none;
@@ -46,7 +46,7 @@ export const Arrow = styled.div`
   width: 14px;
   &:before,
   &:after {
-    background: ${variables.colors.black};
+    background: black;
     border-radius: 3px;
     content: " ";
     height: 2px;
@@ -76,7 +76,7 @@ export const Arrow = styled.div`
 export const List = styled.div`
   overflow-y: hidden;
   position: absolute;
-  top: 30px;
+  top: 34px;
   width: auto;
   z-index: 1;
   div {
@@ -93,12 +93,12 @@ export const List = styled.div`
   }
   ul {
     animation: ${modalContentIn} 0.25s ease-in;
-    border: 1px solid ${variables.colors.black};
+    border: 1px solid black;
     list-style: none;
   }
   li {
     align-items: flex-start;
-    border-bottom: 1px solid ${variables.colors.black};
+    border-bottom: 1px solid black;
     color: black;
     display: flex;
     font-family: "Roboto";

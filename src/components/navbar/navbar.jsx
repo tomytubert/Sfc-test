@@ -1,5 +1,5 @@
 import React from "react";
-import { Nav, Links } from "./styles";
+import * as S from "./styles";
 import DropDown from "../dropDown/DropDown";
 
 const Navbar = () => {
@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <>
-      <Nav>
+      <S.Nav>
         <div>
           <div>
             <img
@@ -24,7 +24,7 @@ const Navbar = () => {
             />
           </div>
           <div>
-            <Links>
+            <S.Links>
               <li>
                 <a href="/landing-page">Sobre nosotros</a>
               </li>
@@ -32,18 +32,18 @@ const Navbar = () => {
                 <a href="/landing-page">Mapa</a>
               </li>
               <li className="dropDown">
-                <DropDown links={recursos_links} text={"Recursos"}/>
+                <DropDown links={recursos_links} text={"Recursos"} />
               </li>
               <li>
                 <a href="/landing-page">Blog</a>
               </li>
-              <li className="dropDown">
-                <DropDown links={lenguage_links} text={"Castellano"}/>
+              <li id="lenguage" className="dropDown">
+                <DropDown links={lenguage_links} text={"Castellano"} />
               </li>
-            </Links>
+            </S.Links>
           </div>
         </div>
-      </Nav>
+      </S.Nav>
     </>
   );
 };
