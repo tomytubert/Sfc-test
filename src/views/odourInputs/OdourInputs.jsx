@@ -18,6 +18,7 @@ const OdourInputs = () => {
     intensity: "Muy débil",
     pleasantness: "Extremadamente agradable",
   };
+  
 
   const intensityRanges = {
     0: "Muy débil",
