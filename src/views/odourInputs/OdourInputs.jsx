@@ -5,6 +5,7 @@ import Search from "../../components/Icons/Search/Search";
 import DateRange from "../../components/dateRange/DateRange";
 import InputSliderHour from "../../components/inputSliderHour/inputSliderHour";
 import InputSlider from "../../components/inputSlider/inputSlider";
+import Map from "../../components/map/Map";
 
 const OdourInputs = () => {
   const initialState = {
@@ -88,6 +89,7 @@ const OdourInputs = () => {
           </div>
         </S.Form>
       </section>
+      <Map />
     </S.Content>
   );
 };
