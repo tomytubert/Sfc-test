@@ -2,7 +2,8 @@ const variables = {
     //Colors
     colors: {
       black: "#393938",
-      red: "#ca3f3f"
+      red: "#ca3f3f",
+      purple:"#e084e0"
     },
     font:{
       title: "Roboto",
