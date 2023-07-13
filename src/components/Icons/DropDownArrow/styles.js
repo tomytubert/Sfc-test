@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import variables from "../../../Styles/_variables";
 
 export const Arrow = styled.div`
   background: transparent;

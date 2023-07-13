@@ -2,7 +2,7 @@ import styled from "styled-components";
 import variables from "../../Styles/_variables";
 
 export const CenterContainer = styled.section`
-  color: ${variables.colors.black}
+  color: ${variables.colors.black};
   left: 50%;
   position: absolute;
   top: 50%;
